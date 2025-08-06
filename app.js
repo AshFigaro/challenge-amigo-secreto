@@ -18,3 +18,13 @@ let nombre = document.getElementById("amigo").value.trim();
 function validarNombre(nombre) {
     return nombre.trim() !== "";
 }
+
+function actualizarLista() {
+    let lista = document.getElementById("listaAmigos");
+    lista.innerHTML = ""; //Limpiar la lista actual
+    amigos.forEach(function(amigo) {
+        let li = document.createElement("li");
+        li.textContent = amigo;
+        lista.appendChild(li);
+    });
+}
