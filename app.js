@@ -28,3 +28,19 @@ function actualizarLista() {
         lista.appendChild(li);
     });
 }
+
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert("No hay amigos para sortear.");
+    } else if (amigos.length < 3) {
+        alert("Deben ser un mínimo de 3 amigos para sortear.");
+    } else {
+        let indexAmigo = Math.floor(Math.random() * amigos.length);
+        let amigoSorteado = amigos[indexAmigo];
+        document.getElementById("resultado").textContent = "El amigo secreto sorteado es: " + amigoSorteado;
+
+
+    amigos = []; //Limpiar la lista de amigos al sortear amigo secreto
+    actualizarLista();
+}
+}
