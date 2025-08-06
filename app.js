@@ -14,3 +14,7 @@ let nombre = document.getElementById("amigo").value.trim();
         document.getElementById("amigo").value = ""; // Limpiar el campo
     }
 }
+
+function validarNombre(nombre) {
+    return nombre.trim() !== "";
+}
