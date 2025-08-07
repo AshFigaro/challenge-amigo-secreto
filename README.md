@@ -26,10 +26,12 @@ Este pequeño proyecto web simula un sorteo de amigo secreto, ideal para practic
 - <h2>Tecnologías</h2>
 
   - HTML5
+  - CSS
   - JavaScript
 
 - <h2>Posibles mejoras</h2>
 
   - Evitar que un amigo se sortee a sí mismo.
   - Añadir animaciones o estilos más personalizados.
+  - Restringir para que el cuadro de texto solo acepte caracteres y no numeros.
 
